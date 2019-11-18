@@ -150,8 +150,8 @@ body {
 
 /*logo*/
 .logo__image {
-    width: 75px;
-    height: 17px;
+    width: 73px;
+    height: 19px;
 }
 
 /*navigation*/
@@ -411,9 +411,17 @@ body {
         grid-row: auto;
         grid-column: auto;
         align-self: flex-end;
-        padding-bottom: 33px;
+        padding-bottom: 30px;
     }
 
+    .banner__social-link {
+        padding: 16px;
+    }
+
+    .banner__social-link--order {
+        order: -1;
+    }
+    
     .banner__texts {
         padding-left: 73px;
         grid-column: 2 / span 4;
