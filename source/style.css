@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     min-width: 320px;
+    max-width: 1920px;
 }
 
 /*font*/
@@ -13,7 +14,7 @@ body {
 
 .font--size-s {
     font-size: 14px;
-    line-height: 1.125;
+    line-height: 1.166;
     font-weight: normal;
 }
 
@@ -31,7 +32,7 @@ body {
 
 .font--size-xl {
     font-size: 26px;
-    line-height: 1.153;
+    line-height: 1.1875;
     font-weight: bold;
 }
 
@@ -257,7 +258,6 @@ body {
 
     .font--size-xl {
         font-size: 28px;
-        line-height: 1.153;
         font-weight: bold;
     }
 
@@ -376,6 +376,11 @@ body {
 }
 
 @media (min-width: 1366px) {
+    /*font*/
+    .font--size-xl{
+        font-size: 32px;
+    }
+
 
     /*main*/
     .main__inner {
@@ -386,6 +391,15 @@ body {
     .main__banner {
         padding-bottom: 0;
         padding-top: 0;
+        margin-bottom: 120px;
+    }
+
+    .bestsellers__link-box {
+        padding-top: 5px;
+    }
+
+    .bestsellers__link {
+        padding-bottom: 3px;
     }
 
     /*header*/
@@ -457,7 +471,6 @@ body {
 
     .banner__image-box {
         grid-row: auto;
-        /*grid-column: auto;*/
         padding-left: 23px;
         grid-column: 6 / span 6;
     }
@@ -524,7 +537,8 @@ body {
 }
 
 .bestsellers__link-box {
-    justify-self: center;
+    margin-right: auto;
+    margin-left: auto;
     padding-bottom: 2px;
     padding-left: 4px;
     padding-right: 4px;
@@ -544,7 +558,7 @@ body {
 
     .bestsellers__link-box {
         grid-row: 1 / auto;
-        grid-column: 2 / auto;
+        grid-column: -2 / span 1;
     }
 
     .bestsellers__title {
@@ -552,7 +566,7 @@ body {
     }
 
     .bestsellers__link-box {
-        justify-self: right;
+        margin-right: 0;
     }
 
     .bestsellers__cards {
@@ -577,5 +591,38 @@ body {
 
     .bestsellers-card__title {
         margin-bottom: 7px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .main__bestsellers {
+        margin-bottom: 126px;
+    }
+
+    .bestsellers {
+        grid-template-rows: minmax(101px, auto);
+        align-items: flex-start;
+    }
+
+    .bestsellers__cards {
+        grid-column: 1 / -1;
+    }
+
+    .bestsellers-cards {
+        grid-template-rows: minmax(413px, auto);
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bestsellers-cards__image-box {
+        margin-bottom: 20px;
+    }
+
+    .bestsellers-cards__image {
+        width: 270px;
+        height: 349px;
+    }
+
+    .bestsellers-card__title {
+        margin-bottom: 9px;
     }
 }
