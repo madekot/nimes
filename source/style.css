@@ -665,6 +665,7 @@ body {
     .main__collection {
         padding-left: 45px;
         padding-right: 45px;
+        margin-bottom: 125px;
     }
 
     .collection {
@@ -696,5 +697,39 @@ body {
         padding-top: 15.465%;
         padding-left: 16.45%;
         flex-grow: 1;
+    }
+}
+
+@media (min-width: 1366px) {
+    .main__collection {
+        padding-left: 98px;
+        padding-right: 98px;
+    }
+
+    .collection__texts-wrapper {
+        padding-top: 31px;
+        padding-bottom: 31px;
+        padding-right: 70px;
+        background-image: url(image/collection__bg--desctop-diagonal.jpg);
+    }
+
+    .collection__texts {
+        padding: 70px 112px 52px 70px;
+    }
+
+    .collection {
+        grid-template-columns: minmax(700px, auto) minmax(470px, auto);
+    }
+
+    .collection__title {
+        margin-bottom: 7px;
+    }
+
+    .collection__text {
+        margin-bottom: 39px;
+    }
+
+    .collection__link {
+        padding: 23px 61px;
     }
 }
