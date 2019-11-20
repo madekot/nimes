@@ -751,12 +751,48 @@ body {
     margin-right: auto;
 }
 
-.category__cards {
-
-}
 
 .category-cards {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    justify-items: center;
+}
+
+.category-cards__image {
+    width: 130px;
+    height: 126px;
+}
+
+.category-cards__image--size {
+    width: 130px;
+    height: 160px;
+}
+
+.category-cards__image-box {
+    margin-bottom: 12px;
+}
+
+.category-card__title {
+    margin-bottom: 0;
+}
+
+.category-cards__item--align {
+    align-self: end;
+}
+
+.category__cards {
+    margin-bottom: 27px;
+}
+
+.category__link-box {
+    margin-bottom: 59px;
+}
+
+.category__title {
+    margin-bottom: 32px;
 }
