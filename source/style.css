@@ -1,7 +1,6 @@
 body {
     margin: 0 auto;
     min-width: 320px;
-    max-width: 1920px;
 }
 
 /*font*/
@@ -396,6 +395,9 @@ body {
 
     /*main*/
     .main__inner {
+        width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
         padding-left: 98px;
         padding-right: 98px;
     }
@@ -413,6 +415,9 @@ body {
 
     /*header*/
     .header__inner {
+        width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
         padding-left: 98px;
         padding-right: 98px;
     }
@@ -671,7 +676,7 @@ body {
     .main__collection {
         padding-left: 45px;
         padding-right: 45px;
-        margin-bottom: 125px;
+        margin-bottom: 94px;
     }
 
     .collection {
@@ -710,6 +715,7 @@ body {
     .main__collection {
         padding-left: 98px;
         padding-right: 98px;
+        margin-bottom: 121px;
     }
 
     .collection__texts-wrapper {
@@ -741,7 +747,6 @@ body {
 }
 
 /*category*/
-
 .category {
     display: grid;
 }
@@ -750,7 +755,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .category-cards {
     margin: 0;
@@ -763,18 +767,8 @@ body {
     justify-items: center;
 }
 
-.category-cards__image {
-    width: 130px;
-    height: 126px;
-}
-
-.category-cards__image--size {
-    width: 130px;
-    height: 160px;
-}
-
 .category-cards__image-box {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 .category-card__title {
@@ -795,4 +789,50 @@ body {
 
 .category__title {
     margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+    .main__category {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .category__cards {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    .category__link-box {
+        margin-right: 0;
+        grid-column: -2 / span 1;
+        grid-row: 1 / auto;
+    }
+
+    .main__category {
+        margin-bottom: 84px;
+    }
+
+    .category__link-box {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .main__category {
+        grid-template-rows: 100px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .category-cards {
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
+
+    .category-cards__item--align {
+        align-self: auto;
+    }
+
+    .category__link-box {
+        align-self: flex-start;
+    }
 }
